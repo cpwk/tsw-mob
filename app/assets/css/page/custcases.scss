@@ -1,0 +1,165 @@
+@import "../color";
+@import "../mixin";
+
+.custcases-page {
+
+}
+
+.cases-header {
+  margin: 40px 3vw 0 3vw;
+  width: 94vw;
+  height: 53vw;
+  background: url("../../image/custcase/cases_header_home.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.cases-header-home {
+  margin: 40px 3vw 0 3vw;
+  width: 94vw;
+  height: 53vw;
+  background: url("../../image/custcase/cases_header_home.jpg") center no-repeat;
+  background-size: contain;
+}
+
+
+.ul-custcases {
+  width: 94vw;
+  margin: 0 3vw;
+
+  li {
+    position: relative;
+    float: left;
+    width: 94vw;
+    height: 94vw;
+    overflow: hidden;
+
+    img {
+      width: 94vw;
+      height: 94vw;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .cover {
+      position: absolute;
+      width: 94vw;
+      height: 94vw;
+      left: 0;
+      top: 0;
+      color: #fff;
+      opacity: 0;
+      background: rgba(0, 0, 0, 0.7);
+      text-align: center;
+
+      .title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        font-size: 26px;
+        font-weight: 400;
+        text-align: center;
+        margin-top: 220px;
+      }
+
+      .subtitle {
+        display: block;
+        width: 100%;
+        padding: 0 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+
+  }
+}
+
+.ul-topcases {
+  width: 94vw;
+  margin: 0 3vw 0 3vw;
+
+  li {
+    width: 100%;
+    padding: 23px 0;
+    border-bottom: 1px dashed $font-gray;
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      cursor: pointer;
+      line-height: 40px;
+    }
+
+    .subtitle {
+      position: relative;
+      font-size: 18px;
+      color: #898989;
+      height: 30px;
+      line-height: 30px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        width: 40px;
+        border-bottom: 2px solid $gold;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    .intro {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 30px;
+      height: 120px;
+      @include multi-line(4);
+    }
+
+    .service {
+      font-size: 14px;
+      line-height: 30px;
+    }
+
+    .btn {
+      margin-top: 10px;
+      width: 110px;
+      height: 25px;
+      line-height: 23px;
+      border: 1px solid $font-default;
+      font-size: 14px;
+      text-align: center;
+      color: $font-default;
+      cursor: pointer;
+    }
+
+    .banner {
+      margin-top: 15px;
+      width: 94vw;
+      height: 41vw;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+.btn-more-topcase {
+  position: relative;
+  margin: 0 auto;
+  width: 110px;
+  height: 25px;
+  line-height: 23px;
+  border: 1px solid $font-default;
+  font-size: 14px;
+  text-align: center;
+  color: $font-default;
+
+  span {
+    position: relative;
+    top: -6px;
+  }
+}

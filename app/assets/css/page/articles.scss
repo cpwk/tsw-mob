@@ -1,0 +1,121 @@
+@import "../color";
+@import "../mixin";
+
+.articles-page {
+  width: 100%;
+  margin-top: 30px;
+
+}
+
+.articles-header {
+  width: 94vw;
+  margin: 0 3vw;
+  height: 8vw;
+  background: url("../../image/article/articles_header.jpg") center no-repeat;
+  background-size: contain;
+}
+
+.articles-header-inner {
+  width: 44vw;
+  margin: 0 28vw;
+  height: 8vw;
+  background: url("../../image/article/articles_header_inner.jpg") center no-repeat;
+  background-size: contain;
+}
+
+
+.ul-articles {
+  margin: 0 3vw;
+  width: 94vw;
+
+  li {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row;
+
+    .img {
+      flex: 0 0 150px;
+      width: 150px;
+      height: 90px;
+    }
+
+    .right {
+      flex: 1;
+      padding-left: 7px;
+
+      .title {
+        width: 100%;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 25px;
+        color: #28292b;
+        @include multi-line(1);
+        cursor: pointer;
+      }
+
+      .date {
+        width: 100%;
+        font-size: 12px;
+        color: #898989;
+        line-height: 25px;
+      }
+
+      .intro {
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #4c4948;
+        @include multi-line(2);
+      }
+
+    }
+  }
+}
+
+.ul-articles-inner {
+  margin: 0 3vw;
+  width: 94vw;
+
+  li {
+    width: 100%;
+    margin-top: 20px;
+    padding: 2vw 2vw 30px 2vw;
+    border: 1px solid $line-grey;
+
+    .img {
+      width: 90vw;
+      height: 53vw;
+    }
+
+    .right {
+      width: 100%;
+
+      .title {
+        width: 100%;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 40px;
+        color: #28292b;
+        @include multi-line(1);
+        cursor: pointer;
+      }
+
+      .date {
+        width: 100%;
+        font-size: 12px;
+        color: #898989;
+        line-height: 30px;
+      }
+
+      .intro {
+        width: 100%;
+        font-size: 12px;
+        line-height: 20px;
+        color: #4c4948;
+        @include multi-line(2);
+      }
+
+    }
+  }
+}

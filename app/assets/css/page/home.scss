@@ -1,0 +1,55 @@
+@import "../color";
+@import "../mixin";
+
+.home-page {
+
+  .main-carousel {
+    height: 126vw;
+
+    .am-carousel {
+      height: 126vw;
+
+      .img-item {
+        width: 100vw;
+        height: 126vw;
+      }
+    }
+  }
+
+  .focus {
+    margin: 30px 3vw 0 3vw;
+    width: 94vw;
+    height: 64vw;
+    background: url("../../image/home/bg_focus.jpg") center no-repeat;
+    background-size: contain;
+  }
+
+  .dong {
+    margin: 40px 3vw 0 3vw;
+    width: 94vw;
+    height: 305vw;
+    background: url("../../image/home/7dong.jpg") center no-repeat;
+    background-size: contain;
+  }
+
+  .coop {
+    margin-top: 15px;
+    width: 94vw;
+    height: 44vw;
+    background: url("../../image/home/coop.jpg") center no-repeat;
+    background-size: contain;
+  }
+
+  .custeval-list {
+    margin-top: 50px;
+  }
+
+  .renke {
+    margin: 15px 12vw 20px 12vw;
+    width: 76vw;
+    height: 80vw;
+    background: url("../../image/home/renke.jpg") center no-repeat;
+    background-size: contain;
+  }
+
+}

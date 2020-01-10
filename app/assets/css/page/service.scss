@@ -1,0 +1,11 @@
+@import "../color";
+@import "../mixin";
+
+.service-page {
+  margin: 30px 2vw;
+  width: 96vw;
+  height: 748vw;
+  background: url("../../image/service/service.jpg") center no-repeat;
+  background-size: contain;
+}
+
